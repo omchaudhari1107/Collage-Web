@@ -1,0 +1,22 @@
+<!-- Develop a JavaScript to display today’s date. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="date"></p>
+    <script>
+        let inner = document.getElementById("date");
+        setInterval(() => {
+            inner.innerHTML = Date();
+        }, 1000)
+    </script>
+</body>
+
+</html>

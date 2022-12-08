@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume with Internal CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(166, 255, 0);
+        }
+
+        table {
+            margin: auto;
+            /* border: 10px solid rgb(255, 0, 0); */
+            /* border-radius: 30px; */
+            border-spacing: 10px;
+            background-color: white;
+            border-top: 10px solid rgb(123, 0, 255);
+            border-left: 10px solid rgb(123, 0, 255);
+            border-bottom: 10px solid rgb(255, 89, 0);
+            border-right: 10px solid rgb(255, 89, 0);
+        }
+
+        td,
+        th {
+            border-radius: 10px;
+            background-color: rgb(250, 239, 143);
+            text-align: center;
+            font-family: 'Roboto Mono', monospace;
+            border: 2px solid black;
+        }
+
+        .silver {
+            background-color: silver;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7">3rd SEM BE I.T</th>
+            </tr>
+            <tr>
+                <th>Slot</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wedensday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>DBMS</td>
+                <td>Maths</td>
+                <td>DE</td>
+                <td rowspan="2" class="t1">3i1 ITW
+                    <br>3i2 ITW <br>3i3 DBMS
+                </td>
+                <td>Maths</td>
+                <td>DE</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Maths</td>
+                <td>DE</td>
+                <td>DBMS</td>
+                <td>DBMS</td>
+                <td>DSA</td>
+            </tr>
+            <tr>
+                <td colspan="7">Break(10 min)</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td rowspan="2" class="t1">3i1 ITW <br>3i1 DE <br>3i3 DBMS</td>
+                <td rowspan="2" class="t1">3i1 DBMS <br>3i1 DSA <br>3i3 DE</td>
+                <td rowspan="2" class="t1">3i1 DSA <br>3i1 DBMS <br>3i3 ITW</td>
+                <td rowspan="2" class="t1">3i1 DBMS <br>3i1 ITW <br>3i3 DSA</td>
+                <td>DSA</td>
+                <td rowspan="2" class="t1">3i1 DE <br>3i1 DBMS <br>3i3 ITW</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>DE</td>
+            </tr>
+            <tr>
+                <td colspan="7">Break(30 min)</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>DE</td>
+                <td>DBMS</td>
+                <td>ITW</td>
+                <td>DSA</td>
+                <td>ITW</td>
+                <td rowspan="2" class="silver"></td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>ITW</td>
+                <td>DSA</td>
+                <td>Maths</td>
+                <td>DBMS</td>
+                <td>DSA</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

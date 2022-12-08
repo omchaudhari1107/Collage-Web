@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input {
+            display: block;
+        }
+
+        .container input {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    Enter Name:- <input type="text" placeholder="Name" id="name">
+    Enter Email:- <input type="email" placeholder="XYZ@gmail.com" id="email">
+    Enter MobileNo.:- <input type="number" placeholder="1234567890" id="no">
+    <div class="container">
+        Gender:- Male<input type="radio" name="gender" id="male">Female<input type="radio" name="gender" id="female">
+    </div>
+    Favorite colour:-<input type="text" id="color" placeholder="Eg. Green">
+    <input type="submit" onclick="saveinfo()">
+    <script>
+        function saveinfo() {
+            let n = document.getElementById("Name").value;
+            let e = document.getElementById("email").value;
+            let no = parseInt(document.getElementById("no").value);
+            let gm = document.getElementById("male").value;
+            let gf = document.getElementById("female").value;
+            let co = document.getElementById("color").value;
+            console.log(n+e+no+gm+gf+co);
+        }
+    </script>
+</body>
+
+</html>
